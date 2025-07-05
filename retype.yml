@@ -1,0 +1,119 @@
+# Retype configuration file
+# https://retype.com/configuration/
+
+# Site configuration
+title: Weekly Meal Plan
+description: A comprehensive weekly meal plan for cutting phase with detailed macro tracking
+logo: https://retype.com/static/images/logo.svg
+favicon: https://retype.com/static/images/favicon.ico
+
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: Cutting
+    url: /cutting
+    children:
+      - title: Overview
+        url: /cutting
+      - title: Monday
+        url: /cutting/monday
+      - title: Tuesday
+        url: /cutting/tuesday
+      - title: Wednesday
+        url: /cutting/wednesday
+      - title: Thursday
+        url: /cutting/thursday
+      - title: Friday
+        url: /cutting/friday
+      - title: Saturday
+        url: /cutting/saturday
+      - title: Sunday
+        url: /cutting/sunday
+  - title: About
+    url: /about
+
+# Theme configuration
+theme:
+  # Primary color
+  primary: "#3b82f6"
+  
+  # Typography
+  font:
+    family: Inter
+    weight: 400
+    
+  # Layout
+  layout:
+    # Navigation
+    nav:
+      # Fixed navigation
+      fixed: true
+      
+    # Sidebar
+    sidebar:
+      # Show sidebar
+      show: true
+      
+    # Footer
+    footer:
+      # Show footer
+      show: true
+      
+    # Search
+    search:
+      # Show search
+      show: true
+
+# Pages
+pages:
+  - title: Home
+    url: /
+    file: index.md
+    
+  - title: Cutting Overview
+    url: /cutting
+    file: cutting/index.md
+    
+  - title: Monday
+    url: /cutting/monday
+    file: cutting/monday.md
+    
+  - title: Tuesday
+    url: /cutting/tuesday
+    file: cutting/tuesday.md
+    
+  - title: Wednesday
+    url: /cutting/wednesday
+    file: cutting/wednesday.md
+    
+  - title: Thursday
+    url: /cutting/thursday
+    file: cutting/thursday.md
+    
+  - title: Friday
+    url: /cutting/friday
+    file: cutting/friday.md
+    
+  - title: Saturday
+    url: /cutting/saturday
+    file: cutting/saturday.md
+    
+  - title: Sunday
+    url: /cutting/sunday
+    file: cutting/sunday.md
+    
+  - title: About
+    url: /about
+    file: about.md
+
+# Build configuration
+build:
+  # Output directory
+  output: .retype
+  
+  # Base URL
+  base: /
+  
+  # Clean output directory
+  clean: true 
